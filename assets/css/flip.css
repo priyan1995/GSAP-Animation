@@ -3,8 +3,7 @@ body{
 }
 .pd-sq-section{
     position: relative;
-    height: 100vh;
-    overflow: hidden;
+    height: 170vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,9 +13,12 @@ body{
     width: 300px;
     height: 300px;
     border: 2px dashed #222222;
-    margin: auto;
-    transform: rotate(45deg);
-    position: relative;
+    margin: auto;  
+    position: fixed;
+    right: 25%;
+    top: 50%;
+    transform: translateY(-150px) translateX(-150px)  rotate(45deg);
+
 }
 
 .pd-sq-1{
