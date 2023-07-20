@@ -1,0 +1,56 @@
+body{
+    position: relative;
+}
+.pd-sq-section{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pd-place-sq{
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #222222;
+    margin: auto;
+    transform: rotate(45deg);
+    position: relative;
+}
+
+.pd-sq-1{
+    width: 150px;
+    height: 150px;
+    background-color: antiquewhite;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.pd-sq-2{
+    width: 150px;
+    height: 150px;
+    background-color: antiquewhite;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.pd-sq-3{
+    width: 150px;
+    height: 150px;
+    background-color: antiquewhite;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+}
+
+.pd-sq-4{
+    width: 150px;
+    height: 150px;
+    background-color: antiquewhite;
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+}
