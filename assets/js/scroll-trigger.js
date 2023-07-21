@@ -8,6 +8,7 @@ gsap.to(".pd-s-t-box",{
         trigger: '.pd-s-t-box',
         start: "top 70%",
         end: "bottom 35%",
+        markers: true,
          toggleActions: "restart pause resume reverse"
         //               enter  onleave onEnterBack onLeaveBack
     }
