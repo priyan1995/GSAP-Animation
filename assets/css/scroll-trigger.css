@@ -54,3 +54,23 @@
     top: 80%;
     left: 0;
 }
+
+.pd-padd{
+    padding:5% 0;
+}
+
+.st-toggle{
+    min-height: 70vh;
+    transition: 0.5s
+}
+
+.st-toggle-sec-2{
+    min-height: 70vh;
+    transition: 0.5s
+}
+
+.pd-sec-light{
+    background: #222222;
+    color: white;
+    transition: 0.5s all;
+}
