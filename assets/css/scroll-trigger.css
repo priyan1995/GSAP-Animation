@@ -3,7 +3,8 @@
     min-height: 250vh;
 }
 
-.pd-s-t-box{
+.pd-s-t-box,
+.pd-s-t-box-pin{
     width: 100px;
     height: 100px;
     background: #47b0dd;
@@ -11,4 +12,13 @@
     top: 30%;
     left: 0;
     opacity: 0;
+}
+
+.pd-s-t-box-pin-2{
+    width: 100px;
+    height: 100px;
+    background: #d247d0;
+    position: absolute;
+    top: 50%;
+    left: 0;
 }
