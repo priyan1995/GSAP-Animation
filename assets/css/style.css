@@ -1,8 +1,25 @@
-body{
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+body {
     overflow: hidden;
 }
 
-.slider{    
+.pd-of-visible {
+    overflow-y: visible;
+}
+
+.slider {
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -10,7 +27,7 @@ body{
     overflow: hidden;
 }
 
-.bgGradiant{
+.bgGradiant {
     background: linear-gradient(60deg, #C6FFDD, #FBD786, #f7797d);
     height: 100vh;
     position: absolute;
@@ -20,15 +37,39 @@ body{
     width: 100%;
 }
 
-.banner-image{
+.banner-image {
     height: 80%;
     width: 100%;
     object-fit: cover;
 }
 
-.slider  h2.bannerTitle{
+.slider h2.bannerTitle {
     position: absolute;
     color: #f4efeb;
     font-weight: 700;
     font-size: 90px;
+}
+
+.pd-padd {
+    padding: 5% 0;
+}
+
+.card {
+    width: 100% !important;
+    margin: 15px 0;
+}
+
+.pd-sec-2{
+    position: relative;
+}
+
+.pd-zoom-bl{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #f9d1d1;
+    border-radius: 100%;
+    z-index: -1;
+    border-radius: 0;
+    top: 0;
 }

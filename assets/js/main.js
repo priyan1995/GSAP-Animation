@@ -22,4 +22,22 @@ ScrollTrigger.create({
     trigger: '.st-toggle-sec-2',
     toggleClass: { targets: ".st-toggle-sec-2", className: "pd-sec-light"},
     ease: Power2.easeInOut
-})
+});
+
+
+const tl = gsap.timeline({  
+    scrollTrigger: {
+        trigger:'.pd-zoom-bl',
+        markers:true,
+        start: "top 90%",
+        end: "bottom 10%",
+        scrub:5,
+        toggleActions: "restart pause resume reverse",
+    }
+})  
+
+tl
+// .to('.pd-zoom-bl', {x:'100'%,y:-200, duration:5,opacity: 1})
+// .to('.pd-zoom-bl', {y:0, duration:5})
+// .to('.pd-zoom-bl', {x:0,y:580, duration:5,borderRadius:'0%',})
+.to('.pd-zoom-bl', { x:0,y:0,duration:5,width:'100%',height:"100%"})
