@@ -86,14 +86,12 @@ window.addEventListener('mousemove', function (e) {
 
 window.addEventListener('scroll', function () {
 
-    // console.log('asfasdf');
-
     let value2Y = scrollY;
 
     console.log(value2Y);
 
     // bannerImage.style.top = valueY * 0.08 + '%';
     
-    bannerImage.style.WebkitTransform = 'rotate('+ value2Y * 0.069 +'deg) translateY( '+ value2Y  +'px )';
+    bannerImage.style.WebkitTransform = 'rotate('+ value2Y * 0.049 +'deg) translateY( '+ value2Y  +'px )';
    
 })
