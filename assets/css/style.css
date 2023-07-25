@@ -1,5 +1,6 @@
 * {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -34,7 +35,8 @@ body {
 
 .bgGradiant {
     /* background: linear-gradient(60deg, #C6FFDD, #FBD786, #f7797d); */
-    background: #e4e4e4;
+    /* background: #e4e4e4; */
+    background: #e4e4e45e;
     height: 100vh;
     position: absolute;
     top: 0;

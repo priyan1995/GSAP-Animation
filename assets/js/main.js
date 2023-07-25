@@ -31,7 +31,7 @@ const tl = gsap.timeline({
         //markers:true,
         start: "top 95%",
         end: "bottom 30%",
-        scrub: 5,
+        scrub: 2,
         toggleActions: "restart pause resume reverse",
     }
 })
@@ -44,7 +44,7 @@ tl
 const tlip = gsap.timeline({
     scrollTrigger: {
         trigger: '.pd-st-img-ip',
-        markers: true,
+      //  markers: true,
         start: "top 95%",
         end: "bottom 40%",
         scrub: 5,
@@ -58,7 +58,7 @@ const tlip = gsap.timeline({
 const tlshadow = gsap.timeline({
     scrollTrigger: {
         trigger: '.pd-shadow-img',
-        markers: true,
+       // markers: true,
         start: "top 95%",
         end: "bottom 40%",
         scrub: 2,
@@ -68,48 +68,6 @@ const tlshadow = gsap.timeline({
 
     .to('.pd-shadow-img', { duration: 5, right: '51%', opacity: 1, width: '66px', height: '11px' })
 
-
-
-// ======= shadow round
-// const tlshadowRound = gsap.timeline({  
-//     scrollTrigger: {
-//         trigger:'.pd-shadow-bl',
-//         markers:true,
-//         start: "top 95%",
-//         end: "bottom 40%",
-//         // scrub:5,
-//         // toggleActions: "restart pause resume reverse",
-//     }
-// })  
-
-// .to('.pd-shadow-bl', { duration:2,opacity:1,width: '361px',height: '61px',top:"76%"})
-
-// banner image move
-// window.onload = function(e){
-  
-
-//     let scrollval = window.onscroll;
-//     console.log(scrollval);
-// if( scrollval == null){
-//     console.log('scrolled')
-//     window.addEventListener('mousemove', function (e) {
-
-//         let valueY = e.clientY;
-//         let valueX = e.clientX;
-    
-//         bannerImage.style.top = valueY * 0.008 + '%';
-//         bannerImage.style.left = valueX * 0.0009 + '%';
-//     })
-// }else{
-//     window.addEventListener('mousemove', function (e) {
-
-//         let valueX = e.clientX;
-    
-//         bannerImage.style.left = valueX * 0.0009 + '%';
-//     })
-// }
-
-// }
 
 window.addEventListener('mousemove', function (e) {
 
