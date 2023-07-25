@@ -71,11 +71,14 @@ const tlshadow = gsap.timeline({
 
 window.addEventListener('mousemove', function (e) {
 
-    let valueY = e.clientY;
-    let valueX = e.clientX;
+    //let valueY = e.clientY;
+    let valueX = e.clientX ;
 
    // bannerImage.style.top = valueY * 0.008 + '%';
-    bannerImage.style.left = valueX * 0.0009 + '%';
+    bannerImage.style.left = valueX * 0.0019 + '%';
+   // bannerImage.style.WebkitTransform = 'translateX( '+ valueX * 0.019 +'px )';
+   
+   
 })
 
 
@@ -85,9 +88,12 @@ window.addEventListener('scroll', function () {
 
     // console.log('asfasdf');
 
-    let valueY = scrollY;
+    let value2Y = scrollY;
 
-    console.log(valueY);
+    console.log(value2Y);
 
-    bannerImage.style.top = valueY * 0.08 + '%';
+    // bannerImage.style.top = valueY * 0.08 + '%';
+    
+    bannerImage.style.WebkitTransform = 'rotate('+ value2Y * 0.069 +'deg) translateY( '+ value2Y  +'px )';
+   
 })
