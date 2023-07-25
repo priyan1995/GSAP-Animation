@@ -88,8 +88,8 @@ body {
     background: #f2f2f2;
     border-radius: 100%;
     z-index: -1;
-    top: 76%;
-    right: 20%;
+    bottom: -19%;
+    right: 26%;
     transform: skewX(55deg);
 }
 
@@ -104,10 +104,10 @@ body {
     left: -50%;
 }
 
-.pd-s-t-img img{
+.pd-s-t-img .pd-st-img-ip{
     width: 100%;
     position: relative;
-    right: -110%;
+    transform: translateX(150%);
 }
 
 .pd-s-t-img{
@@ -119,12 +119,12 @@ body {
     position: absolute;
     width: 0;
     height: 0;
-    background: #b7b7b76e;
-    right: 0%;
-    transform: skew(304deg, 17deg);
+    background: #b7b7b7e3;
+    right: 50%;
+    transform: skew(304deg, 17deg) translateX(150%);
     border-radius: 100%;
-    filter: blur(8px);
-    bottom: -17%;
+    filter: blur(9px);
+    bottom: -12%;
     opacity: 0;
 }
 

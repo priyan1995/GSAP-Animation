@@ -39,7 +39,7 @@ const tlzoomgrayflipsecthree = gsap.timeline({
         start: "top 150%",
         end: "bottom 70%",
         // scrub: 2,
-        toggleActions: "restart pause resume reverse",
+        toggleActions: "restart resume resume reverse",
     }
 })
 

@@ -47,12 +47,12 @@ const tlip = gsap.timeline({
       //  markers: true,
         start: "top 95%",
         end: "bottom 40%",
-        scrub: 5,
-        toggleActions: "restart pause resume reverse",
+        scrub: false,
+        toggleActions: "restart resume resume reverse",
     }
 })
 
-    .to('.pd-st-img-ip', { duration: 5, right: 'auto' })
+    .to('.pd-st-img-ip', { duration: 5, transform: 'translateX(0)' , ease: "back.out(1.7)"})
 
 // ============== shadow
 const tlshadow = gsap.timeline({
@@ -61,12 +61,12 @@ const tlshadow = gsap.timeline({
        // markers: true,
         start: "top 95%",
         end: "bottom 40%",
-        scrub: 2,
-        toggleActions: "restart pause resume reverse",
+        //scrub: 2,
+        toggleActions: "restart resume resume reverse",
     }
 })
 
-    .to('.pd-shadow-img', { duration: 5, right: '51%', opacity: 1, width: '66px', height: '11px' })
+    .to('.pd-shadow-img', { duration: 7, transform: 'translateX(0)', opacity: 1, width: '66px', height: '11px', ease: "slow" })
 
 
 window.addEventListener('mousemove', function (e) {
