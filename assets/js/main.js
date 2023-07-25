@@ -16,7 +16,7 @@ anim1.fromTo( bannerImage, 1, { height:"0" }, {height:"80vh", ease: Power2.easeI
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
-    markers:true,
+   // markers:true,
     start: "top 70%",
     end: "top 0%",
     trigger: '.st-toggle-sec-2',
@@ -28,16 +28,43 @@ ScrollTrigger.create({
 const tl = gsap.timeline({  
     scrollTrigger: {
         trigger:'.pd-zoom-bl',
-        markers:true,
-        start: "top 90%",
-        end: "bottom 10%",
+        //markers:true,
+        start: "top 95%",
+        end: "bottom 30%",
         scrub:5,
         toggleActions: "restart pause resume reverse",
     }
 })  
 
 tl
-// .to('.pd-zoom-bl', {x:'100'%,y:-200, duration:5,opacity: 1})
-// .to('.pd-zoom-bl', {y:0, duration:5})
-// .to('.pd-zoom-bl', {x:0,y:580, duration:5,borderRadius:'0%',})
-.to('.pd-zoom-bl', { x:0,y:0,duration:5,width:'100%',height:"100%"})
+.to('.pd-zoom-bl', { duration:5,width:'150%',height:"150%",top:0,left:'-5%'})
+
+
+const tlip = gsap.timeline({  
+    scrollTrigger: {
+        trigger:'.pd-st-img-ip',
+        markers:true,
+        start: "top 95%",
+        end: "bottom 40%",
+        scrub:5,
+        toggleActions: "restart pause resume reverse",
+    }
+})  
+
+.to('.pd-st-img-ip', { duration:5,right:'auto'})
+
+const tlshadow = gsap.timeline({  
+    scrollTrigger: {
+        trigger:'.pd-shadow-img',
+        markers:true,
+        start: "top 95%",
+        end: "bottom 40%",
+        scrub:5,
+        toggleActions: "restart pause resume reverse",
+    }
+})  
+
+.to('.pd-shadow-img', { duration:5,right:'51%',opacity:1})
+
+
+

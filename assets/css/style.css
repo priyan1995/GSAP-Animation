@@ -1,5 +1,5 @@
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1,
@@ -8,7 +8,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Mochiy Pop One', sans-serif;
+    /* font-family: 'Mochiy Pop One', sans-serif; */
+    font-weight: 700;
+}
+
+p,a,div{
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -61,15 +66,77 @@ body {
 
 .pd-sec-2{
     position: relative;
+    overflow: hidden;
+}
+
+.pd-sec-2 .container{
+    position: relative;
+}
+
+.pd-sec-2 .row{
+    min-height: 90vh;
+}
+
+.pd-shadow-bl{
+    position: absolute;
+    width: 361px;
+    height: 61px;
+    background: #f2f2f2;
+    border-radius: 100%;
+    z-index: -1;
+    top: 72%;
+    right: 20%;
+    transform: skewX(55deg);
 }
 
 .pd-zoom-bl{
     position: absolute;
-    width: 100px;
-    height: 100px;
-    background: #f9d1d1;
+    width: 89px;
+    height: 2px;
+    background: #cdcdcd8c;
     border-radius: 100%;
     z-index: -1;
-    border-radius: 0;
-    top: 0;
+    top: 70%;
+    left: -50%;
+}
+
+.pd-s-t-img img{
+    width: 100%;
+    position: relative;
+    right: -110%;
+}
+
+.pd-s-t-img{
+    position: relative;
+}
+
+.pd-shadow-img{
+    content: "";
+    position: absolute;
+    width: 122px;
+    height: 19px;
+    background: #b7b7b799;
+    right: -51%;
+    transform: skew(304deg, 17deg);
+    border-radius: 100%;
+    filter: blur(8px);
+    bottom: -9%;
+    opacity: 0;
+}
+
+.pd-sec-2 h2{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+.pd-sec-2 p.subtitle{
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 1rem;
+}
+
+/* section 3 */
+
+.pd-sec-3{
+    min-height: 90vh;
 }
