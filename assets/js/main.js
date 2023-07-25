@@ -5,8 +5,8 @@ const bannerTitle = document.querySelector(".bannerTitle");
 
 const anim1 = new TimelineMax();
 
-anim1.fromTo( bannerImage, 1, { height:"0" }, {height:"80vh", ease: Power2.easeInOut} )
-.fromTo(bannerImage, 1.2, { width:"100%" }, { width:"80%", ease: Power2.easeInOut })
+anim1.fromTo( bannerImage, 1, { height:"0" }, {height:"auto", ease: Power2.easeInOut} )
+.fromTo(bannerImage, 1.2, { width:"0" }, { width:"auto", ease: Power2.easeInOut })
 
 .fromTo( gradiant, 1.2, { x: "-100%" }, { x:"0%", ease: Power2.easeInOut } )
 .fromTo ( bannerTitle, 1.5 , { x:"50%", opacity: 0 }, { x:"0%", opacity: 1, ease: Power2.easeInOut } )
@@ -39,6 +39,7 @@ const tl = gsap.timeline({
 tl
 .to('.pd-zoom-bl', { duration:5,width:'150%',height:"150%",top:0,left:'-5%'})
 
+// iphone img
 
 const tlip = gsap.timeline({  
     scrollTrigger: {
@@ -53,6 +54,7 @@ const tlip = gsap.timeline({
 
 .to('.pd-st-img-ip', { duration:5,right:'auto'})
 
+// ============== shadow
 const tlshadow = gsap.timeline({  
     scrollTrigger: {
         trigger:'.pd-shadow-img',
@@ -64,7 +66,20 @@ const tlshadow = gsap.timeline({
     }
 })  
 
-.to('.pd-shadow-img', { duration:5,right:'51%',opacity:1})
+.to('.pd-shadow-img', { duration:5,right:'51%',opacity:1,width: '66px',height: '11px'})
 
 
 
+// ======= shadow round
+// const tlshadowRound = gsap.timeline({  
+//     scrollTrigger: {
+//         trigger:'.pd-shadow-bl',
+//         markers:true,
+//         start: "top 95%",
+//         end: "bottom 40%",
+//         // scrub:5,
+//         // toggleActions: "restart pause resume reverse",
+//     }
+// })  
+
+// .to('.pd-shadow-bl', { duration:2,opacity:1,width: '361px',height: '61px',top:"76%"})
