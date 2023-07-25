@@ -148,3 +148,22 @@ body {
 .pd-sec-3{
     min-height: 90vh;
 }
+
+/* section 3 */
+.pd-s-3-img-left{
+    width: 35%;
+    margin: auto;
+    display: inline-block;
+    margin-top: 3rem;
+    position: relative;
+    transform: translateX(-120%);
+}
+
+.pd-s-3-img-right{
+    width: 37.5%;
+    margin: auto;
+    display: inline-block;
+    margin-top: 3rem;
+    position: relative;
+    transform: translateX(120%);
+}
