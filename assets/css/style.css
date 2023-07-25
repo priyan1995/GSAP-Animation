@@ -147,9 +147,32 @@ body {
 
 .pd-sec-3{
     min-height: 90vh;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0;
 }
 
-/* section 3 */
+.gry-zm-bl{
+    /* position: absolute;
+    width: 89px;
+    height: 89px;
+    background: #cdcdcd8c;
+    border-radius: 100%;
+    z-index: -1;
+    bottom: 0%;
+    left: 50%;  */
+
+    position: absolute;
+    width: 100%;
+    height: 126%;
+    background: #cdcdcd8c;
+    border-radius: 100%;
+    z-index: -1;
+    bottom: -75%;
+    left: 0%;
+    transform: scale(0);
+}
+
 .pd-s-3-img-left{
     width: 35%;
     margin: auto;
@@ -160,10 +183,17 @@ body {
 }
 
 .pd-s-3-img-right{
-    width: 37.5%;
+    width: 37.73%;
     margin: auto;
     display: inline-block;
     margin-top: 3rem;
     position: relative;
     transform: translateX(120%);
+}
+
+/* section 4 */
+.pd-sec-4{
+    position: relative;
+    overflow: hidden;
+    min-height: 90vh;
 }

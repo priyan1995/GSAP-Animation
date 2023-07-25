@@ -28,3 +28,22 @@ const tlrighthand = gsap.timeline({
 })
 
 .to('.pd-s-3-img-right', { duration: 5, transform: 'translateX(0)'})
+
+// bottom ball zoom flip
+
+
+const tlzoomgrayflipsecthree = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.gry-zm-bl',
+        markers: true,
+        start: "top 150%",
+        end: "bottom 70%",
+        // scrub: 2,
+        toggleActions: "restart pause resume reverse",
+    }
+})
+
+.to('.gry-zm-bl', { duration: 2, transform: 'scale(1)',ease: "bounce.out"})
+
+
+gsap.registerPlugin(Flip);
