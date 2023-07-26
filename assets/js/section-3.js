@@ -35,7 +35,7 @@ const tlrighthand = gsap.timeline({
 const tlzoomgrayflipsecthree = gsap.timeline({
     scrollTrigger: {
         trigger: '.gry-zm-bl',
-        markers: true,
+       // markers: true,
         start: "top 150%",
         end: "bottom 70%",
         // scrub: 2,
