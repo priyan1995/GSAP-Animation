@@ -88,10 +88,11 @@ window.addEventListener('scroll', function () {
 
     let value2Y = scrollY;
 
-    console.log(value2Y);
+    //console.log(value2Y);
 
     // bannerImage.style.top = valueY * 0.08 + '%';
     
-    bannerImage.style.WebkitTransform = 'rotate('+ value2Y * 0.049 +'deg) translateY( '+ value2Y  +'px )';
+    // bannerImage.style.WebkitTransform = 'rotate('+ value2Y * 0.049 +'deg) translateY( '+ value2Y  +'px )';
+    bannerImage.style.WebkitTransform = ' translateY( '+ value2Y  +'px )';
    
 })

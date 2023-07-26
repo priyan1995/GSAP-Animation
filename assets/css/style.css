@@ -197,7 +197,6 @@ body {
 .pd-sec-4 {
     position: relative;
     overflow: hidden;
-
 }
 
 .pd-sec-4 .mh-row-90 {
@@ -249,4 +248,100 @@ body {
     opacity: 0; */
     margin-bottom: -155px;
     margin-left: 25px;
+}
+
+/* sec 5 */
+.pd-sec-5 {
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    text-align: center;
+}
+
+.pd-sec-5 .mh-row-90 {
+    /* min-height: 90vh; */
+}
+
+.pd-sec-5 h3 {
+    font-size: 21px;
+    line-height: 1.1904761905;
+    font-weight: 600;
+    letter-spacing: .011em;
+    max-width: 40%;
+    margin: 30px auto 0 auto;
+    color: #6e6e73;
+}
+
+.pd-sec-5 h3 span {
+    color: #f5f5f7;
+}
+
+.mb-8 {
+    margin-bottom: 8rem;
+}
+
+.pd-ipd-step-3 {
+    position: relative;
+}
+
+.pd-ipd-step-4 {
+    position: relative;
+}
+
+.pd-ipd-step-3 h3,
+.pd-ipd-step-4 h4 {
+    text-align: left;
+    width: 35%;
+}
+
+.pd-ipd-step-3 h3 {
+    margin-top: -7rem;
+    margin-left: auto;
+    margin-right: 0;
+    min-height: 6rem;
+}
+
+.pd-ipd-step-4 h3 {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: left;
+    max-width: 35%;
+    min-height: 8rem;
+}
+
+.pd-ipd-step-3 .pd-ipd-line {
+    background: #6e6e73;
+    width: 38%;
+    height: 1px;
+    right: 12%;
+    position: relative;
+    top: -9rem;
+    margin-left: auto;
+    display: block;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.pd-ipd-step-3 .pd-ipd-line::before{
+    content: "";
+    position: absolute;
+    left: -4px;
+    width: 9px;
+    height: 9px;
+    background: #6e6e73;
+    border-radius: 100%;
+    top: -4px;
+}
+
+.pd-ipd-step-4 .pd-ipd-line {
+    background: #6e6e73;
+    width: 1px;
+    height: 73%;
+    right: 37.9%;
+    position: absolute;
+    top: 27%;
+    margin-left: auto;
+    display: block;
+    transform: scaleY(0);
+    transform-origin: top;
 }

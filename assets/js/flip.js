@@ -32,7 +32,7 @@ let smallBox4 = document.querySelector('.pd-sq-4');
 // })
 
 document.addEventListener("scroll", (e) => {
-    console.log(window.scrollY);
+    // /console.log(window.scrollY);
 
     if (window.scrollY > 50) {
         let state = Flip.getState(".pd-sq-1");
