@@ -96,3 +96,5 @@ window.addEventListener('scroll', function () {
     bannerImage.style.WebkitTransform = ' translateY( '+ value2Y  +'px )';
    
 })
+
+
